@@ -12,3 +12,6 @@ This C++ project is a comprehensive railway reservation system designed for rail
 - **File Handling:** Critical for persistent data storage, ensuring that the system's state is maintained across sessions by reading from and writing to files.
 
 This project showcases fundamental concepts in C++ such as classes, file I/O, and memory management, offering a practical example of how a database can be simulated without a traditional DBMS.
+
+## License
+This project is licensed under the MIT License.
