@@ -1,17 +1,18 @@
-### Railway Reservation System for Administration - Project Overview
+# Railway Reservation System for Administration
 
-This C++ project is a comprehensive railway reservation system designed for railway administration. The system manages essential operations such as scheduling trains, handling reservations, and managing passenger information. 
+## Description
+This C++ project is a fully functional railway reservation system built for railway administration. It provides the ability to manage train schedules, handle passenger reservations, and store passenger information. The system uses dynamic memory allocation and file handling to simulate a database, ensuring data persistence across sessions.
 
-**Key Features:**
-- **Train Schedule Management:** Allows administrators to add, update, and delete train schedules.
-- **Reservation Management:** Facilitates booking, canceling, and viewing reservations.
-- **Passenger Information Management:** Keeps track of passenger details and reservation statuses.
+## Features
+- **Train Schedule Management:** Administrators can add, modify, and delete train schedules.
+- **Reservation Management:** Allows users to book, cancel, and view reservations for different trains.
+- **Passenger Information Management:** Stores and retrieves passenger details, keeping track of reservation statuses.
 
-**Key Data Structures & Techniques:**
-- **Dynamic Memory Allocation:** Used to efficiently manage data in the system, simulating a database through the creation and manipulation of data structures in memory.
-- **File Handling:** Critical for persistent data storage, ensuring that the system's state is maintained across sessions by reading from and writing to files.
-
-This project showcases fundamental concepts in C++ such as classes, file I/O, and memory management, offering a practical example of how a database can be simulated without a traditional DBMS.
+## Core Concepts
+- **Dynamic Memory Allocation:** Efficiently manages the program's data structures in memory, simulating a simple database without the use of a DBMS.
+- **File Handling:** Supports persistent storage by reading and writing data to files, allowing the system to retain its state between sessions.
+  
+This project demonstrates key C++ concepts such as classes, file input/output (I/O), and memory management, making it an excellent example of database simulation and administrative management using object-oriented programming.
 
 ## License
 This project is licensed under the MIT License.
