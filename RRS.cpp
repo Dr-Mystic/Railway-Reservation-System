@@ -16,7 +16,7 @@ void reservationOperations(Train*, TrainCapacity*, TrainClass*, Reservation*, in
 
 int main()
 {
-    system("clear");
+    system("cls");
     cout << "+-------------------------------------------------+\n";
     cout << "|      Welcome to Railway Reservation System      |\n";
     cout << "+-------------------------------------------------+\n";
@@ -50,7 +50,7 @@ int main()
     }
 
     wait();
-    system("clear");
+    system("cls");
 
     while (true)
     {
@@ -78,7 +78,7 @@ int main()
             else
             {
                 validation = true;
-                system("clear");
+                system("cls");
             }
         } while (validation == false);
 
@@ -129,7 +129,7 @@ int main()
 
 void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCounter, int noOfTrains, int capacityCounter, int noOfCapacities, int noOfClasses)
 {
-        system("clear");
+        system("cls");
         int trainChoice;
         while (true)
         {
@@ -157,7 +157,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
                 else
                 {
                     validation = true;
-                    system("clear");
+                    system("cls");
                 }
             } while (validation == false);
 
@@ -205,7 +205,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
                         if (trains[i].getTrainId() == id)
                         {
                             unique = false;
-                            system("clear");
+                            system("cls");
                             cout << "Please enter a unique ID.\n\n";
                         }
 
@@ -213,10 +213,10 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
 
                 trains[trainCounter].insert(id);
                 trainCounter++;
-                system("clear");
+                system("cls");
                 cout << "Record inserted successfully.\n\n";
                 wait();
-                system("clear");
+                system("cls");
             }
 
             // Updation
@@ -243,7 +243,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
                             validation = true;
 
                             // Updation Mechanism
-                            system("clear");
+                            system("cls");
                             cout << "Enter new train name: ";
                             char temp[40];
                             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -253,18 +253,18 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
 
                     if (validation == true)
                     {
-                        system("clear");
+                        system("cls");
                         cout << "Record updated successfully.\n\n";
                         wait();
-                        system("clear");
+                        system("cls");
                         break;
                     }
                     else
                     {
-                        system("clear");
+                        system("cls");
                         cout << "Record not found.\n\n";
                         wait();
-                        system("clear");
+                        system("cls");
                         break;
                     }
                 }
@@ -297,7 +297,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
 
                     if (validation == true)
                     {
-                        system("clear");
+                        system("cls");
                         cout << "Record is present in train capacity class.\n\n";
                         break;
                     }
@@ -315,7 +315,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
 
                                 cout << "Record deleted.\n\n";
                                 wait();
-                                system("clear");
+                                system("cls");
                                 trainCounter--;
                                 break;
                             }
@@ -324,7 +324,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
                         {
                             cout << "Record not found.\n\n";
                             wait();
-                            system("clear");
+                            system("cls");
                         }
                         break;
                     }
@@ -359,7 +359,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
                         cout << "\nRecord not found.\n\n";
 
                     wait();
-                    system("clear");
+                    system("cls");
                     break;
                 }
             }
@@ -374,7 +374,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
                     cout << "No records found.\n\n";
 
                 wait();
-                system("clear");
+                system("cls");
             }
 
             // Exiting to main menu
@@ -384,7 +384,7 @@ void trainOperations(Train* trains, TrainCapacity* trainCapacities, int trainCou
 }
 void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapacities, int classCounter, int noOfClasses, int noOfTrains, int noOfCapacities, int capacityCounter)
 {
-    system("clear");
+    system("cls");
     int classChoice;
     while (true)
     {
@@ -412,7 +412,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
             else
             {
                 validation = true;
-                system("clear");
+                system("cls");
             }
         } while (validation == false);
 
@@ -460,7 +460,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
                     if (trainClasses[i].getClassId() == id)
                     {
                         unique = false;
-                        system("clear");
+                        system("cls");
                         cout << "Please enter a unique ID.\n\n";
                     }
 
@@ -468,10 +468,10 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
 
             trainClasses[classCounter].insert(id);
             classCounter++;
-            system("clear");
+            system("cls");
             cout << "Record inserted successfully.\n\n";
             wait();
-            system("clear");
+            system("cls");
         }
 
         // Updation
@@ -498,7 +498,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
                         validation = true;
 
                         // Updation Mechanism
-                        system("clear");
+                        system("cls");
                         cout << "Enter new class name: ";
                         char temp[40];
                         cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -508,18 +508,18 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
 
                 if (validation == true)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record updated successfully.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                     break;
                 }
                 else
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record not found.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                     break;
                 }
             }
@@ -552,7 +552,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
 
                 if (validation == true)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record is present in train capacity class.\n\n";
                     break;
                 }
@@ -570,7 +570,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
 
                             cout << "Record deleted.\n\n";
                             wait();
-                            system("clear");
+                            system("cls");
                             classCounter--;
                             break;
                         }
@@ -579,7 +579,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
                     {
                         cout << "Record not found.\n\n";
                         wait();
-                        system("clear");
+                        system("cls");
                     }
                     break;
                 }
@@ -614,7 +614,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
                     cout << "\nRecord not found.\n\n";
 
                 wait();
-                system("clear");
+                system("cls");
                 break;
             }
         }
@@ -629,7 +629,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
                 cout << "No records found.\n\n";
 
             wait();
-            system("clear");
+            system("cls");
         }
 
         // Exiting to main menu
@@ -639,7 +639,7 @@ void trainClassOperations(TrainClass* trainClasses, TrainCapacity* trainCapaciti
 }
 void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, TrainClass* trainClasses, Reservation* reservations, int reservationCounter, int trainCounter, int classCounter, int capacityCounter, int noOfCapacities)
 {
-    system("clear");
+    system("cls");
     int capacityChoice;
     while (true)
     {
@@ -667,7 +667,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
             else
             {
                 validation = true;
-                system("clear");
+                system("cls");
             }
         } while (validation == false);
 
@@ -676,7 +676,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
         {
             if (capacityCounter == noOfCapacities)
             {
-                system("clear");
+                system("cls");
                 cout << "Data has been inserted for all trains and classes. Please create another train or class.\n\n";
                 continue;
             }
@@ -728,14 +728,14 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
 
                 if (!trainExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n\n";
                     break;
                 }
 
                 if (!classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Class doesn't exist.\n\n";
                     break;
                 }
@@ -746,7 +746,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                     {
                         trainExists = false;
                         classExists = false;
-                        system("clear");
+                        system("cls");
                         cout << "Please enter unique train and class IDs.\n\n";
                         break;
                     }
@@ -758,11 +758,11 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
             {
                 trainCapacities[capacityCounter].insert(tid, cid);
                 capacityCounter++;
-                system("clear");
+                system("cls");
                 cout << "Record inserted successfully.\n\n";
             }
             wait();
-            system("clear");
+            system("cls");
         }
 
         // Updation
@@ -803,13 +803,13 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                         validation = true;
 
                         // Updation Mechanism
-                        system("clear");
+                        system("cls");
                         while (true)
                         {
                             cout << "Enter new total seats: ";
                             int seats;
                             cin >> seats;
-                            system("clear");
+                            system("cls");
 
                             if (cin.fail() || seats < 1)
                             {
@@ -826,7 +826,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                             cout << "Enter new rate: ";
                             int rate;
                             cin >> rate;
-                            system("clear");
+                            system("cls");
 
                             if (cin.fail() || rate < 1)
                             {
@@ -842,18 +842,18 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
 
                 if (validation == true)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record updated successfully.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                     break;
                 }
                 else
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record not found.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                     break;
                 }
             }
@@ -900,7 +900,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
 
                 if (validation == true)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record is present in reservation class.\n\n";
                     break;
                 }
@@ -916,10 +916,10 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                             for (i; i < capacityCounter - 1; i++)
                                 trainCapacities[i] = trainCapacities[i + 1];
 
-                            system("clear");
+                            system("cls");
                             cout << "Record deleted.\n\n";
                             wait();
-                            system("clear");
+                            system("cls");
                             capacityCounter--;
                             break;
                         }
@@ -928,7 +928,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                     {
                         cout << "Record not found.\n\n";
                         wait();
-                        system("clear");
+                        system("cls");
                     }
                     break;
                 }
@@ -978,7 +978,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                     cout << "\nRecord not found.\n\n";
 
                 wait();
-                system("clear");
+                system("cls");
                 break;
             }
         }
@@ -993,7 +993,7 @@ void trainCapacityOperations(Train* trains, TrainCapacity* trainCapacities, Trai
                 cout << "No records found.\n\n";
 
             wait();
-            system("clear");
+            system("cls");
         }
 
         // Exiting to main menu
@@ -1010,7 +1010,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
         // Reservation Menu
         do
         {
-            system("clear");
+            system("cls");
             cout << "+----------------------------------------+\n";
             cout << "|            Reservation Menu            |\n";
             cout << "+----------------------------------------+\n";
@@ -1033,7 +1033,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
             else
             {
                 validation = true;
-                system("clear");
+                system("cls");
             }
         } while (validation == false);
 
@@ -1087,7 +1087,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (!trainExists && !classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n";
                     cout << "Class doesn't exist.\n\n";
                     wait();
@@ -1095,14 +1095,14 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 }
                 else if (!classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Class doesn't exist.\n\n";
                     wait();
                     break;
                 }
                 else if (!trainExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n\n";
                     wait();
                     break;
@@ -1137,7 +1137,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 {
                     if (trainCapacities[i].getTrainId() == tid && trainCapacities[i].getClassId() == cid && trainCapacities[i].getTotalSeats() == ticket)
                     {
-                        system("clear");
+                        system("cls");
                         cout << "There are no available seats.\n\n";
                         wait();
                         break;
@@ -1155,7 +1155,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                         }
                         reservations[reservationCounter].insert(tid, cid, ticketNo, date);
                         reservationCounter++;
-                        system("clear");
+                        system("cls");
                         cout << "Your ticket number is: " << ticketNo + 1;
                         cout << "\n\nRecord inserted successfully.\n\n";
                         wait();
@@ -1164,7 +1164,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 }
 
             }
-            system("clear");
+            system("cls");
         }
 
         // Updation
@@ -1219,7 +1219,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (!trainExists && !classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n";
                     cout << "Class doesn't exist.\n\n";
                     wait();
@@ -1227,14 +1227,14 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 }
                 else if (!classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Class doesn't exist.\n\n";
                     wait();
                     break;
                 }
                 else if (!trainExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n\n";
                     wait();
                     break;
@@ -1278,7 +1278,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                         if (strcmp(reservations[i].getDate(), date) == 0 && reservations[i].getTicketNo() == ticket)
                         {
                             // Updation mechanism
-                            system("clear");
+                            system("cls");
                             cout << "Please enter new CNIC: ";
                             char temp[50];
                             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -1296,17 +1296,17 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (validation == true)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record updated successfully.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                 }
                 else
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record not found.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                 }
             }
         }
@@ -1363,7 +1363,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (!trainExists && !classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n";
                     cout << "Class doesn't exist.\n\n";
                     wait();
@@ -1371,14 +1371,14 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 }
                 else if (!classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Class doesn't exist.\n\n";
                     wait();
                     break;
                 }
                 else if (!trainExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n\n";
                     wait();
                     break;
@@ -1430,17 +1430,17 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                     for (index; index < reservationCounter - 1; index++)
                         reservations[index] = reservations[index + 1];
                     reservationCounter--;
-                    system("clear");
+                    system("cls");
                     cout << "Record deleted successfully.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                 }
                 else
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Record not found.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                 }
             }
         }
@@ -1497,7 +1497,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (!trainExists && !classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n";
                     cout << "Class doesn't exist.\n\n";
                     wait();
@@ -1505,14 +1505,14 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 }
                 else if (!classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Class doesn't exist.\n\n";
                     wait();
                     break;
                 }
                 else if (!trainExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n\n";
                     wait();
                     break;
@@ -1530,7 +1530,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                     cin.get(date, 50);
                 } while (!dateValidation(date));
 
-                system("clear");
+                system("cls");
                 // Searching for record
                 for (int i = 0; i < reservationCounter; i++)
                     if (reservations[i].getTrainId() == tid && reservations[i].getClassId() == cid && strcmp(reservations[i].getDate(), date) == 0)
@@ -1541,15 +1541,15 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (!validation)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "No record found.\n\n";
                     wait();
-                    system("clear");
+                    system("cls");
                 }
                 else
                 {
                     wait();
-                    system("clear");
+                    system("cls");
                 }
             }
         }
@@ -1564,7 +1564,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 cout << "No records found.\n\n";
 
             wait();
-            system("clear");
+            system("cls");
         }
 
         // Displaying available seats
@@ -1619,7 +1619,7 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
                 if (!trainExists && !classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n";
                     cout << "Class doesn't exist.\n\n";
                     wait();
@@ -1627,14 +1627,14 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                 }
                 else if (!classExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Class doesn't exist.\n\n";
                     wait();
                     break;
                 }
                 else if (!trainExists)
                 {
-                    system("clear");
+                    system("cls");
                     cout << "Train doesn't exist.\n\n";
                     wait();
                     break;
@@ -1658,13 +1658,13 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
                     if (reservations[i].getTrainId() == tid && reservations[i].getClassId() == cid && strcmp(reservations[i].getDate(), date) == 0)
                         ticket++;
 
-                system("clear");
+                system("cls");
                 cout << "Remaining tickets: ";
                 for (int i = 0; i < capacityCounter; i++)
                     if (trainCapacities[i].getTrainId() == tid && trainCapacities[i].getClassId() == cid)
                         cout << trainCapacities[i].getTotalSeats() - ticket << endl << endl;
                 wait();
-                system("clear");
+                system("cls");
             }
         }
 
@@ -1672,12 +1672,12 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
         if (reservationChoice == 7)
         {
             validation = false;
-            system("clear");
+            system("cls");
             char temp[20];
             cout << "Enter CNIC: ";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cin.get(temp, 20);
-            system("clear");
+            system("cls");
 
             for (int i = 0; i < reservationCounter; i++)
                 if (strcmp(reservations[i].getCNIC(), temp) == 0)
@@ -1688,15 +1688,15 @@ void reservationOperations(Train* trains, TrainCapacity* trainCapacities, TrainC
 
             if (!validation)
             {
-                system("clear");
+                system("cls");
                 cout << "No record found.\n\n";
                 wait();
-                system("clear");
+                system("cls");
             }
             else
             {
                 wait();
-                system("clear");
+                system("cls");
             }
         }
 

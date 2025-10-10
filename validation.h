@@ -12,7 +12,7 @@ void inputValidation()
 {
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    system("clear");
+    system("cls");
 }
 bool dateValidationPast(const char* inputDate)
 {
